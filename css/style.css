@@ -1,0 +1,151 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-color:#c3c3c3;
+}
+
+a:link{
+	text-decoration: none;
+}
+
+h1{
+	margin: 0px;
+	font-size:1.7em;
+	background-color:#1D9AC0;
+	height: 48px;
+	color:#fff;
+	text-align: center;
+	text-shadow: 2px 4px 2px rgba(0,0,0,0.3);
+	text-transform: uppercase;
+	max-width: 200px;
+}
+
+h6{
+	color:#333;
+	font-weight: bold;
+}
+
+.null{
+	all:unset;
+	cursor: pointer;
+}
+
+hr.mark{
+	margin:0px;
+	padding: 0px;
+	border-top: 3px solid #1D9AC0;
+}
+
+section.cards{
+	margin-top: 20px;
+}
+
+.title-section-card{
+	margin-bottom: 20px;
+	height: 30px;
+	width: 18rem;
+	margin: 0px;
+	font-size:1.7em;
+	height: 48px;
+	color:#1D9AC0;
+	text-align: center;
+	text-shadow: 1px 3px 1px rgba(0,0,0,0.3);
+	text-transform: uppercase;
+}
+
+/* SOCIAL CARDS */
+section.cards{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.card{
+	width: 18rem;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 1s;
+	/*animation-name:card;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-timing-function: ease-in-out;*/
+}
+
+@keyframes card{
+	/*from {
+		transform: scale(1.03);
+	}
+	to{
+		transform: scale(1);
+	}*/
+}
+
+.card:hover .fab{
+	display: flex;	
+}
+
+.card-date, .card-title, .card-content, .title-section-card{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-date, .card-title{
+	position: absolute;
+	color:#fff;
+	font-weight: 600;
+	text-shadow: 1px 2px 1px rgba(0,0,0,0.3);
+	background-color:#1D9AC0;
+	opacity: 0.8;
+}
+
+.card-date{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	top: 5px;
+	right: 5px;
+}
+
+.card-title{
+	width: 110px;
+	height: 25px;
+	top: 165px;
+	left: 0px;
+	padding: 3px;
+	border-top-right-radius: 5px;
+}
+
+.social-icons{
+	height: 35px;
+	position: relative;
+}
+
+.social-icons .fab{
+	display: none;
+	transition: all 0.5s;
+}
+
+.fa-facebook-f:hover, .fa-twitter:hover, .fa-instagram:hover, .fa-google-plus-g:hover{
+	color:#fff;
+	border-radius: 2px;
+}
+
+.fa-facebook-f:hover{
+	background-color:#3b5998;
+}
+
+.fa-twitter:hover{
+	background-color:#00aced;
+}
+
+.fa-instagram:hover{
+	background-color: #8a3ab9;
+}
+
+.fa-google-plus-g:hover{
+	background-color: #d62d20;
+}
